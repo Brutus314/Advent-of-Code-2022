@@ -276,7 +276,7 @@ bool rockFalls (RockType rock, vector<vector<bool>>& matrix, int bottomYValue, i
 }
 
 void fillMatrixWithRock(RockType rock, vector<vector<bool>>& matrix, int bottomYValue, int leftXValue, vector<int>& highestOccupiedIndices) {
-    // We'll return the highest Y value that was filled in
+    // We'll update the highest y value in each column
     switch (rock) {
         case FourWide:
                 matrix[bottomYValue][leftXValue] = true;
