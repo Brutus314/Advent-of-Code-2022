@@ -114,9 +114,6 @@ int main() {
     return 0;
 }
 
-// Optimizations:
-//   Do not double back if we didn't open the current valve (waste of time)
-
 int maxPressure(vector<int>& flowRates, vector<vector<int>>& shortestPaths, int myIndex, int timeLeft) {
     int maxFlow = 0;
 
